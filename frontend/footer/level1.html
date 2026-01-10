@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Level 1: Basic Footer</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+        }
+
+        /* Main content to push footer down */
+        .content {
+            flex: 1;
+            padding: 40px 20px;
+            background: #f5f5f5;
+        }
+
+        /* Basic Footer Styling */
+        .footer {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+
+        .footer p {
+            margin: 10px 0;
+        }
+
+        .footer a {
+            color: #66b3ff;
+            text-decoration: none;
+        }
+
+        .footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <!-- Main Content -->
+    <div class="content">
+        <h1>Level 1: Basic Footer</h1>
+        <p>Scroll down to see the footer</p>
+        
+        <div style="background: white; padding: 20px; margin-top: 20px; border-radius: 8px;">
+            <h3>📚 What You're Learning:</h3>
+            <ul style="margin-left: 20px; line-height: 1.8;">
+                <li><strong>&lt;footer&gt; tag:</strong> Semantic HTML5 element for page footer</li>
+                <li><strong>Flexbox basics:</strong> Using flex to push footer to bottom</li>
+                <li><strong>Basic styling:</strong> Background, padding, text alignment</li>
+                <li><strong>Link styling:</strong> Changing colors and hover effects</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Level 1: Basic Footer -->
+    <footer class="footer">
+        <p>&copy; 2024 MyWebsite. All rights reserved.</p>
+        <p>
+            <a href="#privacy">Privacy Policy</a> | 
+            <a href="#terms">Terms of Service</a>
+        </p>
+    </footer>
+</body>
+</html>
