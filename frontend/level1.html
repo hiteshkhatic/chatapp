@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, intial-scale=1.0">
+        <title>Level 1: Basic Navbar</title>
+        <style>
+            * {
+                margin: 0;
+                padding: 0;
+                box-sizing: border-box;
+            }
+
+            body {
+                font-family: Arial, sans-serif;
+            }
+
+            .navbar {
+                background-color: #333;
+                padding: 15px 20px;
+            }
+
+            .nav-list {
+                list-style: none;
+                display: flex;
+            }
+
+            .nav-item {
+                margin-right: 20px;
+            }
+
+            .nav-link {
+                color: white;
+                text-decoration: none;
+                padding: 8px 12px;
+                display: block;
+            }
+
+            .nav-link:hover {
+                background-color: #555;
+                border-radius: 4px;
+            }
+
+            .nav-link.active {
+                background-color: #4CAF50;
+                border-radius: 4px;
+            }
+
+            .content {
+                padding: 40px 20px;
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <nav class="navbar">
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#services" class="nav-link">Services</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contacts</a>
+                </li>
+            </ul>
+        </nav>
+
+        <div class="content">
+            <h1>Level 1: Foundational Navbar</h1>
+            <p>A simple horizontal navigation bar with basic styling</p>
+            <div style="margin-top: 30px; text-align: left; max-width: 800px; margin-left: auto; margin-right: auto;">
+                <h3>Key Concepts Learned</h3>
+                <ul style="line-height: 1.8;">
+                    <li><strong>Semantic HTML:</strong> Using &lt;nav&gt; tag for navigation</li>
+                    <li><strong>Flexbox:</strong> display: flex for horizontal layout</li>
+                    <li><strong>List Styling</strong> Removing default bullets with list-style: none</li>
+                    <li><strong>Link Styling</strong> Removing underlines and adding padding</li>
+                    <li><strong>States:</strong> :hover and .active classess</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
